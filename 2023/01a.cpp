@@ -1,9 +1,10 @@
 #include <fstream>
 #include <string>
 #include <iostream>
+#include "constants.h"
 
 int main() {
-    std::ifstream file("/Users/wonsang/code/advent-of-code/2023/input/day1a.txt");
+    std::ifstream file(std::string(INPUT_DIRECTORY) + "day1a.txt");
     std::string str;
 
     int result = 0;
